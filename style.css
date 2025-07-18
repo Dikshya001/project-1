@@ -377,8 +377,6 @@ section h2::after {
 .service-card .icon-circle img {
     width: 45px; /* Icon size inside circle */
     height: 45px;
-    filter: brightness(0) invert(1); /* Makes icons white if they are black SVGs */
-    background-image: url('https://picsum.photos/id/60/1000/400');
   
 }
 
