@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our-works -ScriptNest</title>
+    <link rel="stylesheet" href="css/style.css"> <style>
+        /* Basic styling for the Our Works section */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        .project-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            background-image: url('https://picsum.photos/id/2/1000/500');
+        }
+        .project-card-content {
+            padding: 20px;
+        }
+        .project-card-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .project-card-content p {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .project-card-content .tags {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .project-card-content .tags span {
+            display: inline-block;
+            background-color: #e9e9e9;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ScriptNest</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="our-works.html">Our Works</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Our Accomplishments & Projects</h2>
+            <p>Discover the diverse range of projects we've successfully delivered for our clients.</p>
+        </section>
+
+        <section class="our-works-section">
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="url('https://picsum.photos/id/2/1000/500')" alt="project 1 image">
+                    <div class="project-card-content">
+                        <h3>E-commerce Platform for Retail Giant</h3>
+                        <p>Developed a scalable and secure e-commerce solution, integrating various payment gateways and inventory management systems. Resulted in a 30% increase in online sales.</p>
+                        <div class="tags">
+                            <span>Web Development</span>
+                            <span>E-commerce</span>
+                            <span>UI/UX Design</span>
+                            <span>Payment Integration</span>
+                        </div>
+                        <a href="project-detail-1.html" class="cta-button">View Case Study</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://picsum.photos/id/2/400/500" alt="Project 2 Image">
+                    <div class="project-card-content">
+                        <h3>Custom CRM System for B2B Services</h3>
+                        <p>Designed and implemented a tailor-made Customer Relationship Management (CRM) system, streamlining client communication and lead tracking processes.</p>
+                        <div class="tags">
+                            <span>Software Development</span>
+                            <span>CRM</span>
+                            <span>Database Management</span>
+                            <span>Business Automation</span>
+                        </div>
+                        <a href="project-detail-2.html" class="cta-button">View Case Study</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/works/project3.jpg" alt="Project 3 Image">
+                    <div class="project-card-content">
+                        <h3>Mobile App for Healthcare Start-up</h3>
+                        <p>Created an intuitive and user-friendly mobile application for appointment booking and patient record management, improving patient engagement.</p>
+                        <div class="tags">
+                            <span>Mobile App Development</span>
+                            <span>iOS</span>
+                            <span>Android</span>
+                            <span>Healthcare IT</span>
+                        </div>
+                        <a href="project-detail-3.html" class="cta-button">View Case Study</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/works/project4.jpg" alt="Project 4 Image">
+                    <div class="project-card-content">
+                        <h3>Cloud Migration for Financial Services</h3>
+                        <p>Assisted a financial institution in migrating their legacy systems to a secure cloud infrastructure, enhancing scalability and reducing operational costs.</p>
+                        <div class="tags">
+                            <span>Cloud Computing</span>
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>IT Consulting</span>
+                        </div>
+                        <a href="project-detail-4.html" class="cta-button">View Case Study</a>
+                    </div>
+                </div>
+
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ScriptNest. All rights reserved.</p>
+    </footer>
+</body>
+</html>

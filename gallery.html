@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - [Your Company Name]</title>
+    <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        /* Basic styling for the gallery */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover;
+            display: block;
+            background-image: url('https://picsum.photos/id/60/1000/400');
+        }
+        .gallery-item-caption {
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ScriptNest</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ourWorks.html">Our Works</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Our Visual Portfolio</h2>
+            <p>Explore a collection of images showcasing our expertise and completed projects.</p>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <a href="images/gallery/full-size-image1.jpg" data-lightbox="gallery" data-title="Project Alpha - Detail View">
+                        <img src="]" alt="Project Alpha Thumbnail">
+                    </a>
+                    <div class="gallery-item-caption">Project Alpha</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="images/gallery/full-size-image2.jpg" data-lightbox="gallery" data-title="Client Meeting - Brainstorming Session">
+                        <img src="images/gallery/thumbnail-image2.jpg" alt="Client Meeting Thumbnail">
+                    </a>
+                    <div class="gallery-item-caption">Client Meeting</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="images/gallery/full-size-image3.jpg" data-lightbox="gallery" data-title="Our Office Space - Collaborative Area">
+                        <img src="images/gallery/thumbnail-image3.jpg" alt="Office Space Thumbnail">
+                    </a>
+                    <div class="gallery-item-caption">Our Office</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="images/gallery/full-size-image4.jpg" data-lightbox="gallery" data-title="Software Development - Coding in Progress">
+                        <img src="images/gallery/thumbnail-image4.jpg" alt="Software Dev Thumbnail">
+                    </a>
+                    <div class="gallery-item-caption">Development</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="images/gallery/full-size-image5.jpg" data-lightbox="gallery" data-title="Data Center - Server Racks">
+                        <img src="images/gallery/thumbnail-image5.jpg" alt="Data Center Thumbnail">
+                    </a>
+                    <div class="gallery-item-caption">Data Center</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="images/gallery/full-size-image6.jpg" data-lightbox="gallery" data-title="Team Celebration - Project Launch">
+                        <img src="images/gallery/thumbnail-image6.jpg" alt="Team Celebration Thumbnail">
+                    </a>
+                    <div class="gallery-item-caption">Team Success</div>
+                </div>
+
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ScriptNest  . All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        // Optional: Custom Lightbox options (uncomment and modify as needed)
+        // lightbox.option({
+        //     'resizeDuration': 200,
+        //     'wrapAround': true
+        // })
+    </script>
+</body>
+</html>
